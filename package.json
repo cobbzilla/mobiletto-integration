@@ -1,0 +1,44 @@
+{
+  "name": "mobiletto-integration",
+  "version": "1.0.0",
+  "description": "An example integration with mobiletto-base including loading an existing storage driver, and loading a storage driver at runtime.",
+  "main": "index.js",
+  "keywords": [
+    "storage",
+    "s3",
+    "b2",
+    "simple",
+    "filesystem",
+    "mobiletto"
+  ],
+  "homepage": "https://github.com/cobbzilla/mobiletto",
+  "author": "Jonathan Cobb <bqppl0m2@duck.com> (https://github.com/cobbzilla)",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/cobbzilla"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbzilla/mobiletto"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "mocha --timeout 60000 --exit ./test/*.spec.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "randomstring": "^1.3.0"
+  },
+  "dependencies": {
+    "mobiletto-base": "^1.0.12",
+    "mobiletto-common": "^1.0.2",
+    "mobiletto-driver-b2": "^1.0.6",
+    "mobiletto-driver-local": "^1.0.3",
+    "mobiletto-driver-s3": "^1.0.5"
+  }
+}
